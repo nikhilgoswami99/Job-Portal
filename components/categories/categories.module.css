@@ -1,0 +1,162 @@
+/* Categories.module.css */
+
+.section {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 5rem 1rem;
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 0.75rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    gap: 1.5rem;
+  }
+}
+
+/* Card */
+.card {
+  background-color: #ffffff;
+  border: 1px solid rgba(229, 231, 235, 0.5);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-4px);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+}
+
+/* Icon Wrapper */
+.iconWrapper {
+  display: flex;
+  height: 3.5rem;
+  width: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .iconWrapper {
+  transform: scale(1.1);
+}
+
+.icon {
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
+/* Color Classes */
+.blue {
+  color: #2563eb;
+  background-color: #eff6ff;
+}
+
+.green {
+  color: #16a34a;
+  background-color: #f0fdf4;
+}
+
+.red {
+  color: #dc2626;
+  background-color: #fef2f2;
+}
+
+.purple {
+  color: #9333ea;
+  background-color: #faf5ff;
+}
+
+.amber {
+  color: #d97706;
+  background-color: #fffbeb;
+}
+
+.cyan {
+  color: #0891b2;
+  background-color: #ecfeff;
+}
+
+.pink {
+  color: #db2777;
+  background-color: #fdf2f8;
+}
+
+.indigo {
+  color: #4f46e5;
+  background-color: #eef2ff;
+}
+
+/* Text Content */
+.textContent {
+  text-align: center;
+}
+
+.categoryName {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 1rem;
+}
+
+.categoryCount {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}

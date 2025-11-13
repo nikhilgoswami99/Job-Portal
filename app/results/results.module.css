@@ -1,0 +1,35 @@
+/* ResultsPage.module.css */
+
+.page {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 50%, #fce7f3 100%);
+  padding: 3rem 1rem;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+/* Content Section */
+.content {
+  padding: 4rem 0;
+}

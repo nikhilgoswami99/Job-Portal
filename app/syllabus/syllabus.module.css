@@ -1,0 +1,177 @@
+/* Syllabus.module.css */
+
+.page {
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 50%, #fce7f3 100%);
+  padding: 3rem 1rem;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+/* Content Section */
+.content {
+  padding: 4rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card */
+.card {
+  background-color: #ffffff;
+  border: 1px solid rgba(229, 231, 235, 0.5);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Card Header */
+.cardHeader {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.headerContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.iconWrapper {
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.icon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.cardTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.organization {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Card Content */
+.cardContent {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sectionsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionHeading {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.sectionList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.sectionItem {
+  font-size: 0.875rem;
+  color: #6b7280;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.bullet {
+  color: #3b82f6;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+/* Download Button */
+.downloadBtn {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  background-color: #ffffff;
+  color: #374151;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.downloadBtn:hover {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.btnIcon {
+  height: 1rem;
+  width: 1rem;
+}

@@ -1,0 +1,17 @@
+import Image from "next/image";
+import styles from "./page.module.css";
+
+import { Hero } from "@/components/hero/hero";
+import { Categories } from "@/components/categories/categories";
+import { LatestJobs } from "@/components/latestJobs/latestJobs";
+import { Results } from "@/components/results/results";
+
+export default function Home() {
+  console.log("Nikhil Goswami");
+  return <main>
+    <Hero/>
+    <Categories/>
+    <LatestJobs/>
+    <Results/>
+  </main>;
+}
