@@ -4,6 +4,8 @@ import "./globals.css";
 import Navabr from "@/components/navbar/navabr";
 import { Footer } from "@/components/footer/footer";
 
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,6 +28,7 @@ export default function RootLayout({ children }) {
         <Navabr/>
         {children}
         <Footer/>
+        <SpeedInsights/>
       </body>
     </html>
   );
