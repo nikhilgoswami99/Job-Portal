@@ -8,7 +8,7 @@
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 50%, #fce7f3 100%);
-  padding: 3rem 1rem;
+  padding: 6rem 0 3rem 0;
 }
 
 .container {

@@ -14,103 +14,27 @@
 
 @media (min-width: 768px) {
   .container {
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
   }
 }
 
 .grid {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
   .grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Brand Section */
-.brand {
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logo {
-  display: flex;
-  height: 2.5rem;
-  width: 2.5rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.5rem;
-  background: linear-gradient(to bottom right, #3b82f6, rgba(59, 130, 246, 0.8));
-}
-
-.logoText {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.brandInfo {
-  display: flex;
-  flex-direction: column;
-}
-
-.brandName {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #1f2937;
-}
-
-.brandTagline {
-  font-size: 0.625rem;
-  color: #6b7280;
-}
-
-.description {
-  margin-bottom: 1rem;
-  font-size: 0.875rem;
-  color: #6b7280;
-}
-
-/* Social Links */
-.socialLinks {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.socialBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2rem;
-  width: 2rem;
-  border: 1px solid #d1d5db;
-  border-radius: 0.375rem;
-  background-color: #ffffff;
-  color: #6b7280;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.socialBtn:hover {
-  background-color: #f3f4f6;
-  border-color: #9ca3af;
-  color: #1f2937;
-}
-
-.socialIcon {
-  height: 1rem;
-  width: 1rem;
-}
 
 /* Headings */
 .heading {
@@ -142,6 +66,7 @@
 }
 
 /* Newsletter */
+
 .newsletterText {
   margin-bottom: 1rem;
   font-size: 0.875rem;
@@ -150,6 +75,7 @@
 
 .newsletterForm {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 

@@ -8,35 +8,6 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.grid}>
-          {/* Brand */}
-          <div>
-            <div className={styles.brand}>
-              <div className={styles.logo}>
-                <span className={styles.logoText}>RJ</span>
-              </div>
-              <div className={styles.brandInfo}>
-                <span className={styles.brandName}>Rojgar Portal</span>
-                <span className={styles.brandTagline}>Government Jobs</span>
-              </div>
-            </div>
-            <p className={styles.description}>
-              Your trusted platform for latest government job notifications, results, and admit cards.
-            </p>
-            <div className={styles.socialLinks}>
-              <button className={styles.socialBtn}>
-                <Facebook className={styles.socialIcon} />
-              </button>
-              <button className={styles.socialBtn}>
-                <Twitter className={styles.socialIcon} />
-              </button>
-              <button className={styles.socialBtn}>
-                <Youtube className={styles.socialIcon} />
-              </button>
-              <button className={styles.socialBtn}>
-                <Instagram className={styles.socialIcon} />
-              </button>
-            </div>
-          </div>
 
           {/* Quick Links */}
           <div>
@@ -103,7 +74,7 @@ export const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div>
+          <div className={styles.newsLetterBox}>
             <h3 className={styles.heading}>Stay Updated</h3>
             <p className={styles.newsletterText}>
               Subscribe to get latest job notifications directly in your inbox.

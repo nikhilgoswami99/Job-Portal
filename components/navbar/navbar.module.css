@@ -1,7 +1,7 @@
 /* components/Header/Header.module.css */
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 50;
   width: 100%;
@@ -29,6 +29,7 @@
 .leftSection {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -81,12 +82,18 @@
   .nav {
     display: flex;
   }
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .navLink {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #6b7280;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #7e8696;
   text-decoration: none;
   transition: color 0.2s;
 }

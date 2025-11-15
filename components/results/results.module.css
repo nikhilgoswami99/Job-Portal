@@ -188,14 +188,14 @@
   background-color: #ffffff;
   color: #374151;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: bold;
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .downloadBtn:hover {
-  background-color: #f9fafb;
-  border-color: #9ca3af;
+  background-color: rgb(240, 120, 34);
+  color: white;
 }
 
 .actionBtn {
@@ -209,7 +209,7 @@
   background-color: #3b82f6;
   color: #ffffff;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: bold;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -239,12 +239,12 @@
   background-color: #ffffff;
   color: #374151;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: bold;
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .viewAllBtn:hover {
-  background-color: #f9fafb;
-  border-color: #9ca3af;
+  background-color: rgb(240, 120, 34);
+  color: white;
 }
