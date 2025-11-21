@@ -3,7 +3,8 @@ import React from "react";
 import { Search, MapPin, Briefcase } from "lucide-react";
 import styles from "./hero.module.css";
 
-export const Hero = () => {
+export const Hero  = () => {
+  
   return (
     <section className={styles.hero}>
       <div className={styles.container}>

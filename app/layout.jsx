@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import Navabr from "@/components/navbar/navabr";
+import Navbar from "@/components/navbar/navbar";
 import { Footer } from "@/components/footer/footer";
 
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Navabr/>
+        <Navbar/>
         {children}
         <Footer/>
         <SpeedInsights/>

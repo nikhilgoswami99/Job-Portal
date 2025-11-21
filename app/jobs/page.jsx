@@ -3,6 +3,7 @@ import React from 'react';
 import { LatestJobs } from "@/components/latestJobs/latestJobs";
 import styles from './jobs.module.css';
 
+
 const Jobs = () => {
   return (
     <div className={styles.page}>

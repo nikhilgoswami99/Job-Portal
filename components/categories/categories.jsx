@@ -56,7 +56,6 @@ export const Categories = () => {
                   </div>
                   <div className={styles.textContent}>
                     <h3 className={styles.categoryName}>{category.name}</h3>
-                    <p className={styles.categoryCount}>{category.count}</p>
                   </div>
                 </div>
               </div>
