@@ -1,7 +1,8 @@
 // LatestJobs.jsx
-import React from 'react';
 import { Calendar, MapPin, Users, ExternalLink } from "lucide-react";
-import styles from './latestJobs.module.css';
+import styles from "./latestJobs.module.css";
+
+import Link from "next/link";
 
 const jobs = [
   {
@@ -72,26 +73,19 @@ const jobs = [
   },
 ];
 
-export const LatestJobs = () => {
-//   const handleNavigate = (path) => {
-//     window.location.href = path;
-//   };
-
+export const LatestJobs = ({  }) => {
+  
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.header}>
           <div>
-            <h2 className={styles.title}>
-              Latest Job Openings
-            </h2>
-            <p className={styles.subtitle}>
-              Fresh opportunities updated daily
-            </p>
+            <h2 className={styles.title}>Latest Job Openings</h2>
+            <p className={styles.subtitle}>Fresh opportunities updated daily</p>
           </div>
-          <button 
+          <button
             className={`${styles.viewAllBtn} ${styles.desktopOnly}`}
-            // onClick={() => handleNavigate('/jobs')}
+        
           >
             View All Jobs
             <ExternalLink className={styles.btnIcon} />
@@ -106,26 +100,18 @@ export const LatestJobs = () => {
                   <span className={`${styles.badge} ${styles[job.badgeColor]}`}>
                     {job.badge}
                   </span>
-                  <button 
+                  <button
                     className={styles.iconBtn}
-                    // onClick={() => handleNavigate('/job-detail')}
-                  >
-                    <ExternalLink className={styles.icon} />
-                  </button>
+                  
+                  ></button>
                 </div>
-                <h3 className={styles.cardTitle}>
-                  {job.title}
-                </h3>
-                <p className={styles.organization}>
-                  {job.organization}
-                </p>
+                <h3 className={styles.cardTitle}>{job.title}</h3>
+                <p className={styles.organization}>{job.organization}</p>
               </div>
 
               <div className={styles.cardContent}>
-                <p className={styles.description}>
-                  {job.description}
-                </p>
-                
+                <p className={styles.description}>{job.description}</p>
+
                 <div className={styles.infoList}>
                   <div className={styles.infoItem}>
                     <MapPin className={styles.infoIcon} />
@@ -137,23 +123,22 @@ export const LatestJobs = () => {
                   </div>
                   <div className={`${styles.infoItem} ${styles.lastDate}`}>
                     <Calendar className={styles.calendarIcon} />
-                    <span className={styles.dateText}>Last Date: {job.lastDate}</span>
+                    <span className={styles.dateText}>
+                      Last Date: {job.lastDate}
+                    </span>
                   </div>
                 </div>
 
                 <div className={styles.buttonGroup}>
-                  <button 
+                  <button
                     className={styles.applyBtn}
-                    // onClick={() => handleNavigate('/job-detail')}
                   >
                     Apply Now
                   </button>
-                  <button 
-                    className={styles.detailsBtn}
-                    // onClick={() => handleNavigate('/job-detail')}
-                  >
+
+                  <Link  href={`/jobs/${job.id}`} className={styles.detailsBtn}>
                     View Details
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -161,9 +146,8 @@ export const LatestJobs = () => {
         </div>
 
         <div className={`${styles.mobileViewAll}`}>
-          <button 
+          <button
             className={styles.viewAllBtnMobile}
-            // onClick={() => handleNavigate('/jobs')}
           >
             View All Jobs
             <ExternalLink className={styles.btnIcon} />
