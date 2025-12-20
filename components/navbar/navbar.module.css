@@ -5,14 +5,12 @@
   top: 0;
   z-index: 50;
   width: 100%;
-  border-bottom: 1px solid #e5e7eb;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255);
 }
 
 @supports (backdrop-filter: blur(8px)) {
   .header {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255);
   }
 }
 
@@ -47,7 +45,11 @@
   align-items: center;
   justify-content: center;
   border-radius: 0.5rem;
-  background: linear-gradient(to bottom right, #3b82f6, rgba(59, 130, 246, 0.8));
+  background: linear-gradient(
+    to bottom right,
+    #3b82f6,
+    rgba(59, 130, 246, 0.8)
+  );
 }
 
 .logoText {
@@ -67,23 +69,44 @@
   color: #111827;
 }
 
-.logoSubtitle {
-  font-size: 0.625rem;
-  color: #6b7280;
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
 }
 
-.nav {
-  display: none;
-  align-items: center;
-  gap: 1.5rem;
+@media (max-width: 768px) {
+  .showNavbar {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media (min-width: 768px) {
   .nav {
+    position: static;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    transform: none;
+    opacity: 1;
   }
 
-  .container{
+  .container {
     display: flex;
     align-items: center;
     justify-content: center;

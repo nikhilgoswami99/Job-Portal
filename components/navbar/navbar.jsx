@@ -1,29 +1,34 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Bell, User, Menu } from "lucide-react";
+import { Bell, User, Menu, X } from "lucide-react";
 import styles from "./navbar.module.css";
+import { useState } from "react";
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
   const isActive = (path) => pathname === path;
+
+  const handleMobileView = () => {
+    setIsMenuOpen((prev) => !prev)
+  };
 
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.leftSection}>
-          <Link href="/" className={styles.logo}>
+          <Link href="/" className={`${ styles.logo}`}>
             <div className={styles.logoIcon}>
               <span className={styles.logoText}>RJ</span>
             </div>
             <div className={styles.logoContent}>
               <span className={styles.logoTitle}>Rojgar Portal</span>
-              <span className={styles.logoSubtitle}>Government Jobs</span>
             </div>
           </Link>
 
-          <nav className={styles.nav}>
+          <nav onClick={handleMobileView} id="main-navigation" className={` ${styles.nav} ${isMenuOpen ? styles.showNavbar : ""}`}>
             <Link
               href="/"
               className={`${styles.navLink} ${
@@ -69,10 +74,18 @@ export default function Header() {
 
         <div className={styles.rightSection}>
           <button
+            onClick={handleMobileView}
             className={`${styles.iconButton} ${styles.mobileMenu}`}
             aria-label="Menu"
+            aria-expanded={isMenuOpen}
+            aria-controls="main-navigation"
+
           >
-            <Menu className={styles.icon} />
+            {isMenuOpen ? (
+              <X className={styles.icon} strokeWidth={2.75} />
+            ) : (
+              <Menu className={styles.icon} />
+            )}
           </button>
         </div>
       </div>

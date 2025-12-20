@@ -10,7 +10,7 @@ export default async function Home() {
   let jobs = await fetchJobs();
   return <main>
     <Hero/>
-    <Categories/>
+    {/* <Categories/> */}
     <LatestJobs jobs={jobs}/>
   </main>;
 }

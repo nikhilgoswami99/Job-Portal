@@ -96,15 +96,7 @@ export const LatestJobs = ({  }) => {
           {jobs.map((job) => (
             <div key={job.id} className={styles.card}>
               <div className={styles.cardHeader}>
-                <div className={styles.cardTop}>
-                  <span className={`${styles.badge} ${styles[job.badgeColor]}`}>
-                    {job.badge}
-                  </span>
-                  <button
-                    className={styles.iconBtn}
-                  
-                  ></button>
-                </div>
+                
                 <h3 className={styles.cardTitle}>{job.title}</h3>
                 <p className={styles.organization}>{job.organization}</p>
               </div>
