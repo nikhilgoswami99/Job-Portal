@@ -2,12 +2,12 @@
 import React from 'react';
 import { LatestJobs } from "@/components/latestJobs/latestJobs";
 import styles from './jobs.module.css';
-import { fetchJobs } from '@/lib/utilities';
+// import { fetchJobs } from '@/lib/utilities';
 
 
 const Jobs = async () => {
 
-  let jobs = await fetchJobs();
+  // let jobs = await fetchJobs();
 
   return (
     <div className={styles.page}>
@@ -18,7 +18,7 @@ const Jobs = async () => {
             <p className={styles.subtitle}>Browse all available job opportunities</p>
           </div>
         </div>
-        <LatestJobs jobs={jobs} />
+        <LatestJobs />
       </main>
     </div>
   );
